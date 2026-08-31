@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sullana Alerta | Prevención ante El Niño</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="encabezado">
+        <div class="logo">
+            🌿 <span>Sullana</span> Alerta
+        </div>
+        <button class="menu-btn" id="menuBtn">☰</button>
+        <nav id="menu">
+            <a href="#inicio">Inicio</a>
+            <a href="#fenomeno">El Niño</a>
+            <a href="#riesgo">Evaluar riesgo</a>
+            <a href="#prevencion">Prevención</a>
+        </nav>
+    </header>
+
+    <!-- ================= INICIO ================= -->
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-text">
+                <span class="etiqueta">🌎 PREVENCIÓN Y SEGURIDAD</span>
+                <h1>
+                    Sullana<br>
+                    <span>Alerta</span>
+                </h1>
+                <h2>
+                    Juntos prevenimos los riesgos del Fenómeno El Niño
+                </h2>
+                <p>
+                    Información sencilla y útil para conocer los riesgos,
+                    evaluar nuestra vulnerabilidad y saber cómo actuar
+                    antes, durante y después de una emergencia.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#riesgo" class="btn btn-principal">
+                        Evaluar mi riesgo
+                    </a>
+                    <a href="#prevencion" class="btn btn-secundario">
+                        Ver prevención
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-card">
+                <div class="icono-alerta">⚠️</div>
+                <h3>¿Estás preparado?</h3>
+                <p>
+                    Conoce los riesgos de tu zona y aprende
+                    qué hacer ante una emergencia.
+                </p>
+                <div class="estado">
+                    <span class="punto"></span>
+                    Sistema de prevención
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= FENÓMENO EL NIÑO ================= -->
+        <section id="fenomeno" class="seccion">
+            <div class="titulo-seccion">
+                <span>01 · INFORMACIÓN</span>
+                <h2>Conoce el Fenómeno El Niño</h2>
+                <p>Estar informado nos permite tomar mejores decisiones.</p>
+            </div>
+
+            <div class="info-grid">
+                <article class="info-card">
+                    <div class="card-icon">🌧️</div>
+                    <h3>¿Qué puede ocasionar?</h3>
+                    <p>
+                        El Fenómeno El Niño puede generar lluvias intensas,
+                        inundaciones, desbordes y otros efectos que pueden
+                        afectar a familias, viviendas, calles y servicios
+                        de nuestra ciudad.
+                    </p>
+                </article>
+
+                <article class="info-card">
+                    <div class="card-icon">🏠</div>
+                    <h3>¿Quiénes pueden ser vulnerables?</h3>
+                    <p>
+                        Las familias que viven cerca de quebradas, ríos,
+                        sectores con drenaje deficiente o zonas expuestas
+                        a inundaciones pueden presentar mayor vulnerabilidad.
+                    </p>
+                </article>
+
+                <article class="info-card">
+                    <div class="card-icon">📢</div>
+                    <h3>¿Por qué debemos prepararnos?</h3>
+                    <p>
+                        Conocer los riesgos y tener medidas de prevención
+                        ayuda a reducir posibles daños y permite actuar
+                        con mayor seguridad durante una emergencia.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- ================= EVALUACIÓN FEN ================= -->
+        <section id="riesgo" class="seccion seccion-verde">
+            <div class="titulo-seccion">
+                <span>02 · EVALUACIÓN</span>
+                <h2>Evalúa tu vulnerabilidad FEN</h2>
+                <p>
+                    Responde estas preguntas para obtener una orientación
+                    sobre el nivel de riesgo de tu vivienda.
+                </p>
+            </div>
+
+            <div class="riesgo-contenedor">
+                <form id="formRiesgo">
+
+                    <!-- Campo 1: Techo -->
+                    <div class="campo">
+                        <label for="select-techo">
+                            1. ¿De qué material es el techo de tu vivienda?
+                        </label>
+                        <select id="select-techo" required>
+                            <option value="">Seleccionar opción</option>
+                            <option value="3">Calamina simple / Esteras / Plástico</option>
+                            <option value="2">Calamina gruesa / Tejas</option>
+                            <option value="0">Concreto armado / Losa</option>
+                        </select>
+                    </div>
+
+                    <!-- Campo 2: Drenaje -->
+                    <div class="campo">
+                        <label for="select-drenaje">
+                            2. ¿Tu zona presenta problemas de drenaje o se empoza la lluvia?
+                        </label>
+                        <select id="select-drenaje" required>
+                            <option value="">Seleccionar opción</option>
+                            <option value="3">Sí, acumula agua gravemente</option>
+                            <option value="1">Moderado</option>
+                            <option value="0">No, fluye correctamente</option>
+                        </select>
+                    </div>
+
+                    <!-- Campo 3: Zona -->
+                    <div class="campo">
+                        <label for="select-zona">
+                            3. ¿Tu vivienda está cerca de una quebrada o río?
+                        </label>
+                        <select id="select-zona" required>
+                            <option value="">Seleccionar opción</option>
+                            <option value="3">Sí (Alto riesgo)</option>
+                            <option value="0">No (Bajo riesgo)</option>
+                        </select>
+                    </div>
+
+                    <!-- Campo 4: Estado Estructural -->
+                    <div class="campo">
+                        <label for="select-antiguedad">
+                            4. ¿Cuál es el estado estructural de la vivienda?
+                        </label>
+                        <select id="select-antiguedad" required>
+                            <option value="">Seleccionar opción</option>
+                            <option value="3">Adobe o material precario sin reforzar</option>
+                            <option value="1">Ladrillo / Cemento con más de 15 años</option>
+                            <option value="0">Construcción reciente / Buen estado</option>
+                        </select>
+                    </div>
+
+                    <!-- Campo 5: Plan de Emergencia -->
+                    <div class="campo">
+                        <label for="select-plan">
+                            5. ¿Tu familia cuenta con un plan de emergencia y mochilas?
+                        </label>
+                        <select id="select-plan" required>
+                            <option value="">Seleccionar opción</option>
+                            <option value="0">Sí, contamos con todo</option>
+                            <option value="1">En proceso</option>
+                            <option value="3">No tenemos plan ni mochilas</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-calcular">
+                        🔎 Calcular riesgo
+                    </button>
+
+                </form>
+
+                <!-- Contenedor del Resultado -->
+                <div id="contenedor-resultado" class="resultado">
+                    <p>Completa las preguntas para conocer una orientación sobre el nivel de riesgo de tu vivienda.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PREVENCIÓN ================= -->
+        <section id="prevencion" class="seccion">
+            <div class="titulo-seccion">
+                <span>03 · PREVENCIÓN</span>
+                <h2>¿Qué hacer ante una emergencia?</h2>
+                <p>
+                    Prepararnos antes, actuar correctamente durante
+                    y revisar lo ocurrido después puede ayudarnos a reducir riesgos.
+                </p>
+            </div>
+
+            <div class="prevencion-grid">
+                <!-- ANTES -->
+                <article class="prevencion-card">
+                    <div class="numero">01</div>
+                    <div class="prev-icon">🎒</div>
+                    <h3>Antes</h3>
+                    <ul>
+                        <li>✔ Identifica las zonas de riesgo cercanas.</li>
+                        <li>✔ Prepara una mochila de emergencia.</li>
+                        <li>✔ Ten documentos importantes protegidos.</li>
+                        <li>✔ Acuerda un punto de encuentro familiar.</li>
+                        <li>✔ Mantente informado sobre las alertas.</li>
+                    </ul>
+                </article>
+
+                <!-- DURANTE -->
+                <article class="prevencion-card destacado">
+                    <div class="numero">02</div>
+                    <div class="prev-icon">🚨</div>
+                    <h3>Durante</h3>
+                    <ul>
+                        <li>✔ Mantén la calma y sigue las indicaciones.</li>
+                        <li>✔ Aléjate de zonas inundadas.</li>
+                        <li>✔ No cruces quebradas o corrientes de agua.</li>
+                        <li>✔ Dirígete a zonas seguras.</li>
+                        <li>✔ Mantente informado mediante fuentes oficiales.</li>
+                    </ul>
+                </article>
+
+                <!-- DESPUÉS -->
+                <article class="prevencion-card">
+                    <div class="numero">03</div>
+                    <div class="prev-icon">🏡</div>
+                    <h3>Después</h3>
+                    <ul>
+                        <li>✔ Verifica el estado de tu familia.</li>
+                        <li>✔ Evita lugares que todavía presenten peligro.</li>
+                        <li>✔ No regreses a zonas afectadas sin autorización.</li>
+                        <li>✔ Informa sobre situaciones peligrosas.</li>
+                        <li>✔ Colabora con tu comunidad cuando sea seguro.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- ================= LLAMADA FINAL ================= -->
+        <section class="llamada">
+            <div>
+                <span>🌱 PREVENIR ES RESPONSABILIDAD DE TODOS</span>
+                <h2>
+                    Una Sullana preparada<br>
+                    es una Sullana más segura.
+                </h2>
+                <p>
+                    Infórmate, evalúa tus riesgos y comparte
+                    esta información con tu familia y comunidad.
+                </p>
+            </div>
+            <a href="#inicio" class="btn btn-blanco">Volver al inicio ↑</a>
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <div class="footer-logo">🌿 Sullana Alerta</div>
+        <p>Información y prevención ante el Fenómeno El Niño.</p>
+        <p class="copyright">Proyecto educativo · Sullana, Piura</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
